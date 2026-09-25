@@ -11,27 +11,30 @@
   for complex spinal and spinopelvic deformity: the bilateral extending pelvic osteotomy (BEPO) with
   a patient-specific 3D-printed titanium implant.">
 <style>
-  :root { --navy: #0c0e25; --teal: #56bca6; }
+  :root { --navy: #044069; --cyan: #35cdfd; }
   body {
     margin: 0;
     background: #f9f9f7;
-    color: #212338;
+    color: #212f38;
     font: clamp(1.0625rem, 2.5vw, 1.125rem)/1.65 system-ui, sans-serif;
   }
   body > header, section, footer { padding: clamp(2rem, 6vw, 4rem) max(1.25rem, 50% - 26rem); }
-  body > header { padding-block: 2rem 1.5rem; border-bottom: 4px solid var(--teal); }
+  body > header { padding-block: 1.75rem; background: var(--navy); }
   h1 { margin: 0; }
-  h1 img { display: block; width: 280px; max-width: 100%; height: auto; margin-left: 8px; }
-  a { color: #237a68; }
+  /* the logo has a built-in margin of 9.93% of its width; cancel it so the artwork aligns with the
+     text, and clip it so its background doesn't paint outside the header */
+  h1 img { display: block; width: 280px; max-width: 100%; height: auto;
+    margin: calc(min(280px, 100%) * -0.0993); clip-path: inset(20.26% 9.93%); }
+  a { color: #08719b; }
   section:first-child > p:first-child { font-size: 1.2em; color: var(--navy); }
-  section + section { background: var(--navy); color: #e6e7ee; }
-  h2 { color: var(--teal); font-size: 1.1rem; text-transform: uppercase; }
-  article { background: #212338; border-left: 4px solid var(--teal); margin-bottom: 1.5rem;
+  section + section { background: var(--navy); color: #e7ebee; }
+  h2 { color: var(--cyan); font-size: 1.1rem; text-transform: uppercase; }
+  article { background: #032d4a; border-left: 4px solid var(--cyan); margin-bottom: 1.5rem;
     padding: 1.5rem clamp(1.5rem, 4vw, 2.25rem) 0.5rem; }
   h3 { margin: 0; color: #fff; font-size: 1.3rem; }
-  article header p { margin: 0; color: #c0e2dc; font-weight: 600; }
-  article a { color: var(--teal); font-weight: 600; }
-  footer { color: #4a4d63; font-size: 0.95rem; }
+  article header p { margin: 0; color: #cff3fd; font-weight: 600; }
+  article a { color: var(--cyan); font-weight: 600; }
+  footer { color: #4b5963; font-size: 0.95rem; }
   footer h2 { color: var(--navy); font-size: 1rem; }
   address { font-style: normal; }
 </style>
